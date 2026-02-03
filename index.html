@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Voting Ketua OSIS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🗳️ Voting Ketua OSIS</h1>
+
+  <!-- FORM VOTING SISWA -->
+  <form id="votingForm">
+
+    <label class="candidate">
+      <input type="radio" name="pilihan" value="A" required>
+      <img src="gambar-3.avif">
+      <div class="info">
+        <b>Calon A</b><br>
+        Andi – Budi
+      </div>
+    </label>
+
+    <label class="candidate">
+      <input type="radio" name="pilihan" value="B">
+      <img src="gambar-1.avif">
+      <div class="info">
+        <b>Calon B</b><br>
+        Rasya
+      </div>
+    </label>
+
+    <label class="candidate">
+      <input type="radio" name="pilihan" value="C">
+      <img src="gambar-2.avif">
+      <div class="info">
+        <b>Calon C</b><br>
+        Dika – Fajar
+      </div>
+    </label>
+
+    <button type="submit">Kirim Suara</button>
+  </form>
+
+  <hr>
+
+  <!-- LOGIN PANITIA -->
+  <h3>🔐 Login Panitia</h3>
+  <input type="password" id="password" placeholder="Masukkan password panitia">
+  <button type="button" onclick="loginPanitia()">Lihat Hasil Voting</button>
+
+  <!-- HASIL (PANITIA SAJA) -->
+  <div id="hasil" class="hasil"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
